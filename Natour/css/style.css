@@ -7,12 +7,19 @@
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font: 1em sans-serif;
+    font: 16px;
     line-height: 1.7;
     color: #777;
+    padding: 30px;
 }
 
 .header{
     height: 95vh;
-    background-image: none;
+    background-image: linear-gradient(
+        to right bottom,
+         #7fd567d0,
+         #28b485d0
+    ), 
+    url('../img/hero.jpg');
+    background-size: cover;
 }
