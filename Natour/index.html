@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/icon-font.css">
     <link rel="shortcut icon" href="img/favicon.png" type="image/png">
     <script src="https://kit.fontawesome.com/f98e6d7453.js" crossorigin="anonymous"></script>
     <title>Natour</title>
@@ -73,9 +72,15 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-                        <img src="img/nat-1-large.jpg" alt="Photo1" class="composition__photo composition__photo--p1">
-                        <img src="img/nat-2-large.jpg" alt="Photo2" class="composition__photo composition__photo--p2">
-                        <img src="img/nat-3-large.jpg" alt="Photo3" class="composition__photo composition__photo--p3">
+                        <img srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo1"
+                            class="composition__photo composition__photo--p1" src="img/nat-1-large.jpg">
+                        <img srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo2"
+                            class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
+                        <img srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                            sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px" alt="Photo3"
+                            class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
                     </div>
                 </div>
             </div>
@@ -124,7 +129,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-tours" id="section-tours"> 
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">Most popular tours</h2>
             </div>
@@ -322,32 +327,22 @@
 
     <footer class="footer">
         <div class="footer__logo-box">
-            <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+            <picture class="footer__logo">
+                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png, 2x"
+                    media="(max-width: 37.5em)">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo"
+                    src="img/logo-green-2x.png">
+            </picture>
         </div>
-        <div class="row">
-            <div class="col-1-of-2">
-                <div class="footer__navigation">
-                    <ul class="footer__list">
-                        <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-1-of-2">
-                <div class="footer__copyright">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item"><i class="fab fa-facebook-square fa-2x"></i></li>
-                            <li class="footer__item"><i class="fab fa-instagram-square fa-2x"></i></li>
-                            <li class="footer__item"><i class="fab fa-twitter-square fa-2x"></i></li>
-                            <li class="footer__item"><i class="fab fa-line fa-2x"></i></li>
-                            <li class="footer__item"><i class="fab fa-linkedin fa-2x"></i></li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="row u-center-text">
+            <div class="footer__navigation">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Company</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Contact us</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Carrers</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Privacy policy</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+                </ul>
             </div>
         </div>
         <div class="row u-center-text">
@@ -364,14 +359,17 @@
             <div class="popup__right">
                 <a href="#section-tours" class="popup__close">&times;</a>
                 <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before
+                    booking</h3>
                 <p class="popup__text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quasi necessitatibus, 
-                    ea qui ipsam facere maiores perspiciatis neque sed temporibus, harum, minima dolorem nisi quidem 
-                    nemo. Dolores, nostrum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quasi necessitatibus, 
-                    ea qui ipsam facere maiores perspiciatis neque sed temporibus, harum, minima dolorem nisi quidem 
-                    nemo. Dolores, nostrum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quasi necessitatibus, 
-                    ea qui ipsam facere maiores perspiciatis neque sed temporibus, harum, minima dolorem nisi quidem 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque quasi necessitatibus,
+                    ea qui ipsam facere maiores perspiciatis neque sed temporibus, harum, minima dolorem nisi quidem
+                    nemo. Dolores, nostrum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
+                    quasi necessitatibus,
+                    ea qui ipsam facere maiores perspiciatis neque sed temporibus, harum, minima dolorem nisi quidem
+                    nemo. Dolores, nostrum facilis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eaque
+                    quasi necessitatibus,
+                    ea qui ipsam facere maiores perspiciatis neque sed temporibus, harum, minima dolorem nisi quidem
                     nemo. Dolores, nostrum facilis?
                 </p>
                 <a href="#" class="btn btn--green">Book now</a>
