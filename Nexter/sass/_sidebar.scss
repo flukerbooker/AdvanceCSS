@@ -5,9 +5,95 @@
 
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width:$bp-large){
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    list-style: none;
+    margin-top: 2rem;
+
+    @media only screen and (max-width:$bp-large){
+        flex-direction: row;
+        margin-top: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        display: none;
+    }
+
+    &__icon{
+        fill: #fff;
+        height: 3.5rem;
+        width: 3.5rem;
+
+        &:not(:last-child){
+            margin-bottom: .8rem;
+        }
+    }
+
+    &__item {
+        padding: 1rem 0;
+        font-family: $font-display;
+
+        display: flex;
+        justify-content: center;
+        transition: all .2s;
+
+        &:hover{
+            background-color: $color-primary-dark;
+            transform: translateY(-3px);
+
+            @media only screen and (max-width:$bp-large){
+                transform: none;
+            }
+        }
+
+        &--active{
+            background-color: $color-primary-dark;
+        }
+
+        @media only screen and (max-width:$bp-large){
+            flex: 1;
+            padding: 0;
+            align-content: center;
+        }
+    }
+
+    &__link:link,
+    &__link:visited{
+        font-size: 1.4rem;
+        color: #fff;
+        text-decoration: none;
+        font-family: $font-display;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 1.25rem;
+        display: block;
+
+        @media only screen and (max-width:$bp-large){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                margin-left: 1.5rem;
+            }
+        }
+    }
 }
 
 .nav-btn{
+    display: none;
     border: none;
     border-radius: 0;
 
@@ -31,5 +117,19 @@
 
     &::after{
         transform: translateY(1.3rem);
+    }
+
+    @media only screen and (max-width: $bp-small){
+        display: block;
+        margin-top: 0;
+        margin-right: 3rem;
+
+        &::before{
+            transform: translateY(-1.2rem);
+        }
+    
+        &::after{
+            transform: translateY(1rem);
+        }
     }
 }
