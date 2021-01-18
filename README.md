@@ -1,5 +1,5 @@
 # AdvanceCSS
-This repository has created for collecting an advance CSS/SCSS techniques by Advanced CSS and Sass: Flexbox, Grid, Animations and More! online course from Udem.
+This repository has created for collecting an advance CSS/SCSS techniques by Advanced CSS and Sass: Flexbox, Grid, Animations and More! online course from Udemy.
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development. See deployment for notes on how to deploy the project on a live system.
 ### Installing
