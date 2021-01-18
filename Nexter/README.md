@@ -1,5 +1,5 @@
 # Nexter
-The first website project name Nexter is website for selling a house by used the **grid technique**, animation, and media query port for responsive website design and used Sass to be a preprocessing.
+The third website project name Nexter is website for selling a house by used the **grid technique**, animation, and media query port for responsive website design and used Sass to be a preprocessing.
 ## Pages & Sections
 ### 1. Side Navigation Bar & Header Section
 ![Header](https://github.com/flukerbooker/AdvanceCSS/blob/main/Nexter/img/Pages/header.png)
