@@ -7,7 +7,7 @@ Install the package.json via Node
 ```
 npm install
 ```
-## Running
+### Running
 ```
 npm start
 ```
